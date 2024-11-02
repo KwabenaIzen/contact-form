@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="main">
+      <section class="container">
+        <h1 class="primay-heading">Contact Us</h1>
+        <div class="card-container">
+          <form class="form">
+            <div class="form-group username">
+              <label for="firstname">
+                First Name<span class="required">*</span></label
+              >
+              <input
+                class="input"
+                type="text"
+                name="firstname"
+                id="firstname"
+              />
+              <p class="error-message hidden">This field is required</p>
+            </div>
+
+            <div class="form-group username">
+              <label for="lastname"
+                >Last Name<span class="required">*</span></label
+              >
+              <input class="input" type="text" name="lastname" id="lastname" />
+              <p class="error-message hidden">This field is required</p>
+            </div>
+            <div class="form-group useraddress">
+              <label for="emailaddress"
+                >Email Address<span class="required">*</span></label
+              >
+              <input class="input" type="email" id="emailaddress" />
+              <p class="error-message hidden">
+                Please enter a valid email address
+              </p>
+            </div>
+            <div class="form-group userquery">
+              <label for="userquery"
+                >Query Type <span class="required">*</span></label
+              >
+              <div class="allquery">
+                <div class="queryone">
+                  <input type="radio" name="option1" id="option1" />
+                  <label for="option1">General Enquiry</label>
+                </div>
+                <div class="querytwo">
+                  <input type="radio" name="option2" id="option2" />
+                  <label for="option2"> Support Request</label>
+                </div>
+              </div>
+              <p class="error-message hidden">Please select a query type</p>
+            </div>
+            <div class="form-group txtmessage">
+              <label for="txtmessage">
+                Message <span class="required">*</span></label
+              >
+              <textarea name="txtmessage" id="txtmessage" rows="4"></textarea>
+              <p class="error-message hidden">This field is required</p>
+            </div>
+            <div class="form-group thecheckbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox"
+                >I consent to being contacted by the team
+                <span class="required">*</span>
+              </label>
+              <p class="error-message hidden">
+                To submit this form, please consent to being contacted
+              </p>
+            </div>
+            <div class="submit-btn"><input type="submit" value="Submit" /></div>
+          </form>
+        </div>
+      </section>
+      <div class="success-message-container hidden">
+        <div class="message-container">
+          <img
+            class="success-message-img"
+            src="/assets/images/icon-success-check.svg"
+            alt=""
+          />
+          <h2 class="secondary-heading">Message Sent!</h2>
+        </div>
+
+        <p class="success-feedback">
+          Thanks for completing the form. we'll be in touch soon!
+        </p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://wa.me/+233553130196">kwabena Izen</a>.
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
